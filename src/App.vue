@@ -4,6 +4,7 @@
         class="el-menu-demo"
         mode="horizontal"
         @select="handleSelect"
+        router=true
     >
         <el-menu-item index="0">
             <img 
@@ -14,8 +15,8 @@
         </el-menu-item>
         <el-menu-item style="width: 60vw">
         </el-menu-item>
-        <el-menu-item index="1" to="/">Beranda</el-menu-item>
-        <el-menu-item index="2">Kelas Prakerja</el-menu-item>
+        <el-menu-item index="/">Beranda</el-menu-item>
+        <el-menu-item index="/about">About</el-menu-item>
         <el-menu-item index="3">Privacy</el-menu-item>
         <el-menu-item index="4">Kelas Saya</el-menu-item>
     </el-menu>
