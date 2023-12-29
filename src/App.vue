@@ -6,25 +6,27 @@
         @select="handleSelect"
         router=true
     >
-        <el-menu-item index="0">
-            <img 
-                style="width: 230px"
-                src="./assets/logo.png"
-                alt="logo"
-            />
-        </el-menu-item>
-        <el-menu-item style="width: 60vw">
-        </el-menu-item>
-        <el-menu-item index="/">Beranda</el-menu-item>
-        <el-menu-item index="/about">About</el-menu-item>
-        <el-menu-item index="3">Privacy</el-menu-item>
-        <el-menu-item index="4">Kelas Saya</el-menu-item>
-    </el-menu>
-  <nav>
+      <el-menu-item index="0">
+          <img 
+              style="width: 180px"
+              src="./assets/logo.png"
+              alt="logo"
+          />
+      </el-menu-item>
+      <el-menu-item style="width: 55vw">
+      </el-menu-item>
+      <el-menu-item index="/">Beranda</el-menu-item>
+      <el-menu-item index="/about">About</el-menu-item>
+      <el-menu-item index="/privacy">Privacy</el-menu-item>
+      <el-menu-item index="/my-class">Kelas Saya</el-menu-item>
+  </el-menu>
+
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/beranda">Beranda</router-link>
-  </nav>
+  </nav> -->
+
   <router-view/>
 </template>
 
@@ -44,6 +46,11 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+body{
+  margin-top: 0;
+  background-color: whitesmoke;
 }
 
 nav {

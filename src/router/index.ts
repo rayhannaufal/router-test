@@ -1,12 +1,13 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import BerandaView from '../views/BerandaView.vue'
+import KelasSaya from '../views/KelasSaya.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: BerandaView
   },
   {
     path: '/about',
@@ -17,9 +18,14 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path: '/beranda',
-    name: 'name',
-    component: BerandaView
+    path: '/privacy',
+    name: 'privacy',
+    component: HomeView
+  },
+  {
+    path: '/my-class',
+    name: 'my class',
+    component: KelasSaya
   }
 ]
 
