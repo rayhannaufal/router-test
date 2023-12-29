@@ -49,7 +49,7 @@
 }
 
 body{
-  margin-top: 0;
+  margin: 0 0 0 0;
   background-color: whitesmoke;
 }
 
